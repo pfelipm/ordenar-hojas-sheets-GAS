@@ -3,8 +3,6 @@
  * «Velocidad vs. Permisos: Ordenando pestañas de hojas de cálculo con Apps Script»
  * https://pablofelip.online/velocidad-permisos-ordenando-pestanas-apps-script
  * Pablo Felip Monferrer | 2025 
- * 
- * @OnlyCurrentDoc
  */
 
 function onOpen() {

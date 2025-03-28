@@ -1,6 +1,7 @@
 /**
  * Ordena las hojas de un libro de cálculo alfabéticamente en sentido ascendente o descendente
  * utilizando el servicio avanzado (API) de hojas de cálculo.
+ * @param {boolean} [ascendente]
  */
 function ordenarHojasApi(ascendente = true) {
 
@@ -29,6 +30,7 @@ function ordenarHojasApi(ascendente = true) {
       hdc.getId()
     );
     hdc.setActiveSheet(hojaActual);
+    ui.alert(`Se han ordenado alfabéticamente ${hojasOrdenadas.length} hoja(s) en sentido ${ascendente ? 'ascendente' : 'descendente'}.`, ui.ButtonSet.OK);
 
   } catch (e) {
     ui.alert(`Se ha producido un error inesperado al ordenar las hojas, inténtalo de nuevo.

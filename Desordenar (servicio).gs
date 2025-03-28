@@ -3,7 +3,7 @@
  * utilizando el servicio integrado de hojas de cálculo.
  * Mantiene el estado de visibilidad de las hojas y restaura la hoja activa.
  * 
- * Generado por Gemini 2.5 Pro (experimental) a partir de la función de ordenación anterior.
+ * Generado por Gemini 2.5 Pro (experimental) a partir de la función de ordenación ordenarHojasServicio().
  */
 function desordenarHojasServicio() {
 
