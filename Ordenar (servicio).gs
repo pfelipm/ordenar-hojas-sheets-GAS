@@ -33,7 +33,7 @@ function ordenarHojasServicio(ascendente = true) {
     hdc.setActiveSheet(hojaActual);
     SpreadsheetApp.flush();
     ui.alert(`Se han ordenado alfabéticamente ${hojasOrdenadas.length} hoja(s) en sentido ${ascendente ? 'ascendente' : 'descendente'}.`, ui.ButtonSet.OK);
- 
+
   } catch (e) {
     ui.alert(`Se ha producido un error inesperado al ordenar las hojas, inténtalo de nuevo.
       
