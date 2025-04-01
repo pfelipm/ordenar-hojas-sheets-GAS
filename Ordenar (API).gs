@@ -14,7 +14,7 @@ function ordenarHojasApi(ascendente = true) {
 
     // Obtiene vector de propiedades de hojas (nombre, índice)
     const hojasOrdenadas = Sheets.Spreadsheets.get(
-      SpreadsheetApp.getActiveSpreadsheet().getId(), { fields: 'sheets.properties(sheetId,title,index)' }
+      SpreadsheetApp.getActiveSpreadsheet().getId(), { fields: 'sheets.properties(sheetId,title)' }
     ).sheets.sort((hoja1, hoja2) =>
       Math.pow(-1, !ascendente) * collator.compare(hoja1.properties.title, hoja2.properties.title)
     );
