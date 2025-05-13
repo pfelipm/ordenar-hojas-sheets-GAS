@@ -23,9 +23,3 @@ function ordenarHojasServicioAsc() { ordenarHojasServicio(true); }
 function ordenarHojasServicioDesc() { ordenarHojasServicio(false); }
 function ordenarHojasApiAsc() { ordenarHojasApi(true); }
 function ordenarHojasApiDesc() { ordenarHojasApi(false); }
-
-function foo() {
-    const locale = SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetLocale();
-    console.info('Locale (getSpreadsheetLocale()):' + locale);
-    console.info(`Idioma: (getSpreadsheetLocale().split('_')[0]): ` + locale.split('_')[0]);
-}
